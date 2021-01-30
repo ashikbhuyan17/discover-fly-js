@@ -53,13 +53,13 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id="firstClass-count" class="inp-style inp-width" type="text" value="0" name="">
+                    <input id="firstClass-count" class="inp-style inp-width" type="number" value="0" name="">
 
                 </div>
                 <div>
-                    <button id="decrease" onclick="flightsBooking('firstClass',false)" class="btn btn-default"> <i
+                    <button onclick="flightsBooking('firstClass',false)" class="btn btn-default"> <i
                             class="fas fa-minus"></i></button>
-                    <button id="increase" onclick="flightsBooking('firstClass',true)" class="btn btn-default"><i
+                    <button onclick="flightsBooking('firstClass',true)" class="btn btn-default"><i
                             class="fas fa-plus"></i></button>
                 </div>
             </div>
@@ -69,9 +69,9 @@
                     <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div>
-                    <button id="economyDecrease" onclick="flightsBooking('economy',false)" class="btn btn-default"> <i
+                    <button onclick="flightsBooking('economy',false)" class="btn btn-default"> <i
                             class="fas fa-minus"></i></button>
-                    <button id="economyIncrease" onclick="flightsBooking('economy',true)" class="btn btn-default"><i
+                    <button onclick="flightsBooking('economy',true)" class="btn btn-default"><i
                             class="fas fa-plus"></i></button>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id="subtotal">$500</p>
+                        <p id="subtotal">$000</p>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="total-tax">$50</p>
+                        <p id="total-tax">$00</p>
                     </div>
                 </div>
                 <hr>
@@ -99,24 +99,42 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="grand-total">$550</p>
+                        <p id="grand-total">$000</p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+
+            <div id="showing" class="py-3" style="display: none;">
+                <div class="card w-50">
+                    <div class="card-body">
+                        <h5>Flights Booking Successfully Done</h5>
+                        <p>Thanks for Staying with us !!</p>
+                        <button id="closeButton" class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="show" class="btn-style">Book Now</button>
+
+
         </div>
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
-        </section>
+        <main>
+
+            <section>
+                <div class="booking-content">
+                    <h1>discover <br> around the world</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga
+                        laborumalias
+                        veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                        nobise
+                        voluptatibus quam</p>
+                </div>
+            </section>
 
 
-        <script src="app.js"></script>
-        <!--Thank You-->
+            <script src="app.js"></script>
+            <!--Thank You-->
 </body>
 
 </html>
